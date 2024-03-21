@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Alike&display=swap");
+:root {
+  --bg-body: #212529;
+  --color-font-deep: #e9ecef;
+  --color-font-light: #adb5bd;
+  --bg-app: #20c997;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--bg-body);
+  color: var(--color-font-deep);
+  height: 100vh;
+  font-family: "Alike", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+}
+.app-container {
+  background-color: var(--bg-app);
+  width: 80vh;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.instruction-container {
+  padding: 1rem 2rem;
+}
+.instruction-container h3 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #ffd8a8;
+  background-color: #69db7c;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+.using-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-left: 3rem;
+}
+.using-steps li {
+  display: flex;
+  gap: 0.5rem;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-container input {
+  height: 10rem;
+  width: 30rem;
+  overflow: scroll;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  border-radius: 12px;
+  background-color: #495057;
+  color: var(--color-font-deep);
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 2rem;
+}
+.buttons button {
+  border: none;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+.buttons button:hover {
+  scale: 1.1;
+}
+.buttons button:active {
+  scale: 1;
+}
+.result-container {
+  padding: 2rem 10rem;
+}
+.results {
+  list-style: none;
+}
+.results li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+.results input {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+}
